@@ -5,65 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:backgroundTint="@color/white"
     tools:context=".Marios">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="387dp"
-        android:layout_height="570dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/marios_title"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="Mario's Restaurant"
-            android:textAlignment="center"
-            android:textSize="35dp" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <TextView
-            android:id="@+id/marios_loc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:fontFamily="sans-serif"
-            android:text="16 Upper Session, Baguio City"
-            android:textAlignment="center"
-            android:textStyle="italic" />
+            <TextView
+                android:id="@+id/marios_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:text="Mario's Restaurant"
+                android:textAlignment="center"
+                android:textSize="35sp" />
 
-        <ImageView
-            android:id="@+id/canto_img"
-            android:layout_width="match_parent"
-            android:layout_height="249dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/marios" />
+            <TextView
+                android:id="@+id/marios_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif"
+                android:text="16 Upper Session, Baguio City"
+                android:textAlignment="center"
+                android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/canto_hour"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Operating Hours: 11AM - 10PM Daily"
-            android:textStyle="bold"
-            android:fontFamily="@font/afacad"
-            android:textSize="20dp"/>
+            <ImageView
+                android:id="@+id/canto_img"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/marios" />
 
-        <TextView
-            android:id="@+id/canto_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/afacad"
-            android:text="Mario's is particularly famous for its classic dishes, such as the Caesar Salad, which is prepared tableside, providing diners with a personalized experience while enjoying fresh ingredients. Other standout offerings include Roast Turkey and Cochinillo, often featured during special events, showcasing the restaurant's commitment to traditional cooking methods and festive flavors, as well as Paella and Roast USDA Beef, highlighting Mario's dedication to quality and flavor"
-            android:textAlignment="center"
-            android:textSize="18dp" />
+            <TextView
+                android:id="@+id/canto_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Operating Hours: 11AM - 10PM Daily"
+                android:textStyle="bold"
+                android:fontFamily="@font/afacad"
+                android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/canto_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/afacad"
+                android:text="Mario's is particularly famous for its classic dishes, such as the Caesar Salad, which is prepared tableside, providing diners with a personalized experience while enjoying fresh ingredients. Other standout offerings include Roast Turkey and Cochinillo, often featured during special events, showcasing the restaurant's commitment to traditional cooking methods and festive flavors, as well as Paella and Roast USDA Beef, highlighting Mario's dedication to quality and flavor."
+                android:textAlignment="center"
+                android:textSize="18sp" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

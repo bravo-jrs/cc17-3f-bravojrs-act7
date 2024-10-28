@@ -6,41 +6,52 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 
-
-/**
- * A simple [Fragment] subclass.
- * Use the [restaurants_category.newInstance] factory method to
- * create an instance of this fragment.
- */
 class RestaurantsCategory : Fragment() {
+
+    private lateinit var viewModel: RestaurantsCategoryViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_restaurants_category, container, false)
+        viewModel = ViewModelProvider(requireActivity()).get(RestaurantsCategoryViewModel::class.java)
+
+        val restaurantDetails = listOf("Good Taste", "Mario's", "Canto")
+        viewModel.setRestaurantDetails(restaurantDetails)
+
+        setupNavigationButtons(view)
+
+        return view
+    }
+
+    private fun setupNavigationButtons(view: View) {
         val buttonGoodTaste = view.findViewById<Button>(R.id.button_goodtaste)
         val buttonMarios = view.findViewById<Button>(R.id.button_marios)
         val buttonCanto = view.findViewById<Button>(R.id.button_canto)
 
-
-        buttonGoodTaste.setOnClickListener{
-            findNavController().navigate(R.id.action_restaurants_category_to_good_taste)
+        buttonGoodTaste.setOnClickListener {
+            val bundle = Bundle().apply {
+                putString("restaurantName", "Good Taste")
+            }
+            findNavController().navigate(R.id.action_restaurants_category_to_good_taste, bundle)
         }
 
-        buttonMarios.setOnClickListener{
-            findNavController().navigate(R.id.action_restaurants_category_to_marios)
+        buttonMarios.setOnClickListener {
+            val bundle = Bundle().apply {
+                putString("restaurantName", "Mario's")
+            }
+            findNavController().navigate(R.id.action_restaurants_category_to_marios, bundle)
         }
 
-        buttonCanto.setOnClickListener{
-            findNavController().navigate(R.id.action_restaurants_category_to_canto)
+        buttonCanto.setOnClickListener {
+            val bundle = Bundle().apply {
+                putString("restaurantName", "Canto")
+            }
+            findNavController().navigate(R.id.action_restaurants_category_to_canto, bundle)
         }
-
-
-    return view
-
     }
 }

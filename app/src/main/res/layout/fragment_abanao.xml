@@ -5,19 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:backgroundTint="@color/white"
     tools:context=".Abanao">
 
+    <ScrollView
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 
     <LinearLayout
-        android:layout_width="387dp"
-        android:layout_height="570dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
         <TextView
             android:id="@+id/abanao_title"
@@ -26,33 +24,33 @@
             android:fontFamily="@font/adlam_display"
             android:text="Abanao Square"
             android:textAlignment="center"
-            android:textSize="35dp" />
+            android:textSize="35sp" />
 
         <TextView
-            android:id="@+id/abanao_loc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:fontFamily="sans-serif"
-            android:text="Abanao Corner, Zandueta St, Baguio, 2600 Benguet"
-            android:textAlignment="center"
-            android:textStyle="italic" />
+        android:id="@+id/abanao_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="sans-serif"
+        android:text="Abanao Corner, Zandueta St, Baguio, 2600 Benguet"
+        android:textAlignment="center"
+        android:textStyle="italic" />
 
-        <ImageView
-            android:id="@+id/abanao_img"
-            android:layout_width="match_parent"
-            android:layout_height="249dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/abanao" />
+    <ImageView
+        android:id="@+id/abanao_img"
+        android:layout_width="match_parent"
+        android:layout_height="249dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/abanao" />
 
-        <TextView
-            android:id="@+id/abanao_hour"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Operating Hours: 9 AM - 8 PM Daily"
-            android:textStyle="bold"
-            android:fontFamily="@font/afacad"
-            android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/abanao_hour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/afacad"
+        android:text="Operating Hours: 9 AM - 8 PM Daily"
+        android:textSize="18sp"
+    android:textStyle="bold" />
 
         <TextView
             android:id="@+id/abanao_desc"
@@ -62,8 +60,9 @@
             android:fontFamily="@font/afacad"
             android:text="Abanao Square is a five-storey shopping mall nestled in the central business district of Baguio City. They offer a wide variety of shops and services for the ultimate shopping and dining experience. We are strategically located within walking distance of major points of interest and are easily accessible by public transportation."
             android:textAlignment="center"
-            android:textSize="16dp" />
-
+            android:textSize="16sp" />
 
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

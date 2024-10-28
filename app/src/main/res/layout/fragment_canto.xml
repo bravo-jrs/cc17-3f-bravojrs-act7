@@ -8,62 +8,62 @@
     android:backgroundTint="@color/white"
     tools:context=".Canto">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="387dp"
-        android:layout_height="570dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/canto_title"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="Canto Restaurant"
-            android:textAlignment="center"
-            android:textSize="35dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/canto_loc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:fontFamily="sans-serif"
-            android:text="25 Kisad Rd, Baguio, 2600 Benguet"
-            android:textAlignment="center"
-            android:textStyle="italic" />
+            <TextView
+                android:id="@+id/canto_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:text="Canto Restaurant"
+                android:textAlignment="center"
+                android:textSize="35sp" />
 
-        <ImageView
-            android:id="@+id/canto_img"
-            android:layout_width="match_parent"
-            android:layout_height="249dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/canto" />
+            <TextView
+                android:id="@+id/canto_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif"
+                android:text="25 Kisad Rd, Baguio, 2600 Benguet"
+                android:textAlignment="center"
+                android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/canto_hour"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Operating Hours: 10AM - 10PM Daily"
-            android:textStyle="bold"
-            android:fontFamily="@font/afacad"
-            android:textSize="18dp"/>
+            <ImageView
+                android:id="@+id/canto_img"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/canto" />
 
-        <TextView
-            android:id="@+id/canto_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/afacad"
-            android:text="Canto specializes in a mix of American and Filipino cuisine, with a particular emphasis on their fall-off-the-bone ribs, which have garnered a loyal following. The restaurant's menu features a variety of comfort foods that are perfect for sharing, making it an ideal spot for groups or families."
-            android:textAlignment="center"
-            android:textSize="16dp" />
+            <TextView
+                android:id="@+id/canto_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Operating Hours: 10AM - 10PM Daily"
+                android:textStyle="bold"
+                android:fontFamily="@font/afacad"
+                android:textSize="18sp"/>
 
+            <TextView
+                android:id="@+id/canto_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/afacad"
+                android:text="Canto specializes in a mix of American and Filipino cuisine, with a particular emphasis on their fall-off-the-bone ribs, which have garnered a loyal following. The restaurant's menu features a variety of comfort foods that are perfect for sharing, making it an ideal spot for groups or families."
+                android:textAlignment="center"
+                android:textSize="16sp" />
 
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

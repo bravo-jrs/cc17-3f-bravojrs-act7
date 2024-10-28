@@ -8,63 +8,62 @@
     android:backgroundTint="@color/white"
     tools:context=".GoodTaste">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_width="387dp"
-        android:layout_height="570dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:id="@+id/good_taste_title"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/adlam_display"
-            android:text="Good Taste Restaurant"
-            android:textAlignment="center"
-            android:textSize="35dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/good_taste_loc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:fontFamily="sans-serif"
-            android:text="Corner Cariño and Otek Streets, Rizal Monument Area"
-            android:textAlignment="center"
-            android:textStyle="italic" />
+            <TextView
+                android:id="@+id/good_taste_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:text="Good Taste Restaurant"
+                android:textAlignment="center"
+                android:textSize="35sp" />
 
-        <ImageView
-            android:id="@+id/good_taste_img"
-            android:layout_width="match_parent"
-            android:layout_height="249dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/goodtaste" />
+            <TextView
+                android:id="@+id/good_taste_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif"
+                android:text="Corner Cariño and Otek Streets, Rizal Monument Area"
+                android:textAlignment="center"
+                android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/canto_hour"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Operating Hours: 24 hrs Daily"
-            android:textStyle="bold"
-            android:fontFamily="@font/afacad"
-            android:textSize="20dp"/>
+            <ImageView
+                android:id="@+id/good_taste_img"
+                android:layout_width="match_parent"
+                android:layout_height="249dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/goodtaste" />
 
+            <TextView
+                android:id="@+id/canto_hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Operating Hours: 24 hrs Daily"
+                android:textStyle="bold"
+                android:fontFamily="@font/afacad"
+                android:textSize="20sp"/>
 
-        <TextView
-            android:id="@+id/good_taste_desc"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/afacad"
-            android:text="Good Taste Restaurant in Baguio City is a beloved dining spot known for its delicious and affordable food, making it a favorite among locals and tourists alike. This 24/7 establishment primarily focuses on Chinese cuisine, offering a variety of dishes that cater to diverse palates. Some of the standout specialties include fried rice, noodles, and sweet and sour dishes"
-            android:textAlignment="center"
-            android:textSize="18dp" />
+            <TextView
+                android:id="@+id/good_taste_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/afacad"
+                android:text="Good Taste Restaurant in Baguio City is a beloved dining spot known for its delicious and affordable food, making it a favorite among locals and tourists alike. This 24/7 establishment primarily focuses on Chinese cuisine, offering a variety of dishes that cater to diverse palates. Some of the standout specialties include fried rice, noodles, and sweet and sour dishes."
+                android:textAlignment="center"
+                android:textSize="18sp" />
 
+        </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
