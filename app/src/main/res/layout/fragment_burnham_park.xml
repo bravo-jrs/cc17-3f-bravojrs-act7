@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".BurnhamPark">
+
+
+    <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="570dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/burnham_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/adlam_display"
+            android:text="Burnham Park"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/burnham_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif"
+            android:text=" Jose Abad Santos Dr, Baguio, 2600 Benguet"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/burnham_img"
+            android:layout_width="match_parent"
+            android:layout_height="249dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/burnham" />
+
+        <TextView
+            android:id="@+id/botanical_hour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operating Hours: 24hrsDaily"
+            android:textStyle="bold"
+            android:fontFamily="@font/afacad"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/burnham_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/afacad"
+            android:text="The 'mother of all parks' in Baguio city, the summer capital of the Philippines, is a 32.84-hectare park designed by, and named after, American architect and urban planner Daniel Hudson Burnham, who also designed the original plan for Baguio City as well as Dewey Boulevard (now Roxas Boulevard) in Manila. The park has 12 main areas, the most popular of which are the Burnham Lagoon, a man-made lake with rowboats for hire; a children's playground; a skating rink; the Rose Garden and the Picnic Grove."
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

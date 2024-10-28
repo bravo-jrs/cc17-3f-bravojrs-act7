@@ -1,0 +1,166 @@
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeScreenFragment">
+
+<!--    Home Scree Navigation-->
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.cc17_3f_bravojrs_act7.HomeScreen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_restaurants_category"
+            app:destination="@id/restaurants_category" />
+
+        <action
+            android:id="@+id/action_homeScreenFragment_to_parks_category"
+            app:destination="@id/parks_category" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_shopping_centers_category"
+            app:destination="@id/shopping_centers_category" />
+    </fragment>
+
+<!--    Restaurant Category Navigation-->
+    <fragment
+        android:id="@+id/restaurants_category"
+        android:name="com.example.cc17_3f_bravojrs_act7.RestaurantsCategory"
+        android:label="fragment_restaurants_category"
+        tools:layout="@layout/fragment_restaurants_category" >
+        <action
+            android:id="@+id/action_restaurants_category_to_good_taste"
+            app:destination="@id/good_taste" />
+        <action
+            android:id="@+id/action_restaurants_category_to_marios"
+            app:destination="@id/marios" />
+        <action
+            android:id="@+id/action_restaurants_category_to_canto"
+            app:destination="@id/canto" />
+        <action
+            android:id="@+id/action_restaurants_category_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+
+<!--    Parks Catagory Navigation-->
+    <fragment
+        android:id="@+id/parks_category"
+        android:name="com.example.cc17_3f_bravojrs_act7.ParksCategory"
+        android:label="fragment_parks_category"
+        tools:layout="@layout/fragment_parks_category" >
+        <action
+            android:id="@+id/action_parks_category_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_parks_category_to_burnham_park"
+            app:destination="@id/burnham_park" />
+        <action
+            android:id="@+id/action_parks_category_to_mines_view"
+            app:destination="@id/mines_view" />
+        <action
+            android:id="@+id/action_parks_category_to_botanical"
+            app:destination="@id/botanical" />
+    </fragment>
+
+<!--    Shopping Centers Navigation-->
+    <fragment
+        android:id="@+id/shopping_centers_category"
+        android:name="com.example.cc17_3f_bravojrs_act7.ShoppingCentersCategory"
+        android:label="fragment_shopping_centers_category"
+        tools:layout="@layout/fragment_shopping_centers_category" >
+        <action
+            android:id="@+id/action_shopping_centers_category_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_shopping_centers_category_to_porta_vaga"
+            app:destination="@id/porta_vaga" />
+        <action
+            android:id="@+id/action_shopping_centers_category_to_SM"
+            app:destination="@id/SM" />
+        <action
+            android:id="@+id/action_shopping_centers_category_to_center_mall"
+            app:destination="@id/center_mall" />
+    </fragment>
+
+<!--    -->
+    <fragment
+        android:id="@+id/good_taste"
+        android:name="com.example.cc17_3f_bravojrs_act7.GoodTaste"
+        android:label="fragment_good_taste"
+        tools:layout="@layout/fragment_good_taste" >
+        <action
+            android:id="@+id/action_good_taste_to_restaurants_category"
+            app:destination="@id/restaurants_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/marios"
+        android:name="com.example.cc17_3f_bravojrs_act7.Marios"
+        android:label="fragment_marios"
+        tools:layout="@layout/fragment_marios" >
+        <action
+            android:id="@+id/action_marios_to_restaurants_category"
+            app:destination="@id/restaurants_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/canto"
+        android:name="com.example.cc17_3f_bravojrs_act7.Canto"
+        android:label="fragment_canto"
+        tools:layout="@layout/fragment_canto" >
+        <action
+            android:id="@+id/action_canto_to_restaurants_category"
+            app:destination="@id/restaurants_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/burnham_park"
+        android:name="com.example.cc17_3f_bravojrs_act7.BurnhamPark"
+        android:label="fragment_burnham_park"
+        tools:layout="@layout/fragment_burnham_park" >
+        <action
+            android:id="@+id/action_burnham_park_to_parks_category"
+            app:destination="@id/parks_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/mines_view"
+        android:name="com.example.cc17_3f_bravojrs_act7.MinesView"
+        android:label="fragment_mines_view"
+        tools:layout="@layout/fragment_mines_view" >
+        <action
+            android:id="@+id/action_mines_view_to_parks_category"
+            app:destination="@id/parks_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/botanical"
+        android:name="com.example.cc17_3f_bravojrs_act7.Botanical"
+        android:label="fragment_botanical"
+        tools:layout="@layout/fragment_botanical" >
+        <action
+            android:id="@+id/action_botanical_to_parks_category"
+            app:destination="@id/parks_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/porta_vaga"
+        android:name="com.example.cc17_3f_bravojrs_act7.PortaVaga"
+        android:label="fragment_porta_vaga"
+        tools:layout="@layout/fragment_porta_vaga" >
+        <action
+            android:id="@+id/action_porta_vaga_to_shopping_centers_category"
+            app:destination="@id/shopping_centers_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/SM"
+        android:name="com.example.cc17_3f_bravojrs_act7.Abanao"
+        android:label="fragment_s_m"
+        tools:layout="@layout/fragment_abanao" >
+        <action
+            android:id="@+id/action_SM_to_shopping_centers_category"
+            app:destination="@id/shopping_centers_category" />
+    </fragment>
+    <fragment
+        android:id="@+id/center_mall"
+        android:name="com.example.cc17_3f_bravojrs_act7.CenterMall"
+        android:label="fragment_center_mall"
+        tools:layout="@layout/fragment_center_mall" >
+        <action
+            android:id="@+id/action_center_mall_to_shopping_centers_category"
+            app:destination="@id/shopping_centers_category" />
+    </fragment>
+</navigation>
